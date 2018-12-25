@@ -1,4 +1,4 @@
-/* webee-superbit
+/* jichang
  * 使用此文件来定义自定义函数和图形块。
  * 想了解更详细的信息，请前往 https://makecode.microbit.org/blocks/custom
  */
@@ -7,7 +7,7 @@
 
 
 //% weight=100 color=#1E90FF icon="\uf13d"
-namespace Superbit {
+namespace jichang {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
     const MODE2 = 0x01
