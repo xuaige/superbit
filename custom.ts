@@ -32,7 +32,13 @@ namespace jichang {
         S3 = 0x03,
         S4 = 0x04,
         S5 = 0x05,
-        S6 = 0x06
+        S6 = 0x06,
+        S7 = 0x07,
+        S8 = 0x08,
+        S9 = 0x09,
+        S10 = 0x0A,
+        S11 = 0x0B,
+        S12 = 0x0C
     }
 
     export enum Motors {
