@@ -27,18 +27,18 @@ namespace jichang {
     const STEP_CHD_H = 1023
 
     export enum Servos {
-        S1 = 0x01,
-        S2 = 0x02,
-        S3 = 0x03,
-        S4 = 0x04,
-        S5 = 0x05,
-        S6 = 0x06,
-        S7 = 0x07,
-        S8 = 0x08,
-        S9 = 0x09,
-        S10 = 0x0A,
-        S11 = 0x0B,
-        S12 = 0x0C
+        S1 = 0x08,
+        S2 = 0x09,
+        S3 = 0x0A,
+        S4 = 0x0B,
+        S5 = 0x0C,
+        S6 = 0x0D,
+        S7 = 0x0E,
+        S8 = 0x0F,
+        S9 = 0x04,
+        S10 = 0x05,
+        S11 = 0x06,
+        S12 = 0x07
     }
 
     export enum Motors {
@@ -298,7 +298,7 @@ namespace jichang {
         // 50hz: 20,000 us
         let v_us = (degree * 1800 / 180 + 600) // 0.6 ~ 2.4
         let value = v_us * 4096 / 20000
-        setPwm(index + 7, 0, value)
+        setPwm(index, 0, value)
     }
 
     /**
