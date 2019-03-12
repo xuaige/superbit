@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "license": "MIT",
     "dependencies": {
-        "core": "*",
+        "core": "*"
     },
     "description": "Extension for webee superbit",
     "files": [
