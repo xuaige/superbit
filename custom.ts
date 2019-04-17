@@ -71,15 +71,15 @@ namespace jichang {
     //% weight=91
     export function sensor(unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
-        pins.setPull(DigitalPin.P8, PinPullMode.PullNone);
-        pins.digitalWritePin(DigitalPin.P8, 0);
+        pins.setPull(DigitalPin.P1, PinPullMode.PullNone);
+        pins.digitalWritePin(DigitalPin.P1, 0);
         control.waitMicros(2);
-        pins.digitalWritePin(DigitalPin.P8, 1);
+        pins.digitalWritePin(DigitalPin.P1, 1);
         control.waitMicros(10);
-        pins.digitalWritePin(DigitalPin.P8, 0);
+        pins.digitalWritePin(DigitalPin.P1, 0);
 
         // read pulse
-        let distance = Math.round(pins.pulseIn(DigitalPin.P12, PulseValue.High, maxCmDistance * 42));
+        let distance = Math.round(pins.pulseIn(DigitalPin.P2, PulseValue.High, maxCmDistance * 42));
         console.log("Distance: " + Math.round(distance / 42) + "cm");
 
         basic.pause(50)
